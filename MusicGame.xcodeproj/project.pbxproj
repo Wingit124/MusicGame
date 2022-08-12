@@ -7,18 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5688B1E28A63A5C0056795A /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = A5688B1D28A63A5C0056795A /* Preview Content */; };
+		A5688B2128A63A6C0056795A /* Root in Frameworks */ = {isa = PBXBuildFile; productRef = A5688B2028A63A6C0056795A /* Root */; };
 		A5C3750B28A62F9900DCF42C /* MusicGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C3750A28A62F9900DCF42C /* MusicGameApp.swift */; };
-		A5C3750D28A62F9900DCF42C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C3750C28A62F9900DCF42C /* ContentView.swift */; };
 		A5C3750F28A62F9B00DCF42C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C3750E28A62F9B00DCF42C /* Assets.xcassets */; };
-		A5C3751228A62F9B00DCF42C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C3751128A62F9B00DCF42C /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A50DB0A728A6422700C06C3B /* SearchBeatmap */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SearchBeatmap; sourceTree = "<group>"; };
+		A50DB0A928A6433E00C06C3B /* FavoriteBeatmap */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FavoriteBeatmap; sourceTree = "<group>"; };
+		A50DB0AA28A643E100C06C3B /* Home */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Home; sourceTree = "<group>"; };
+		A563972628A63A1D000623DC /* Root */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Root; sourceTree = "<group>"; };
+		A5688B1D28A63A5C0056795A /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
 		A5C3750728A62F9900DCF42C /* MusicGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C3750A28A62F9900DCF42C /* MusicGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicGameApp.swift; sourceTree = "<group>"; };
-		A5C3750C28A62F9900DCF42C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A5C3750E28A62F9B00DCF42C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A5C3751128A62F9B00DCF42C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +29,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5688B2128A63A6C0056795A /* Root in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A563972228A6393F000623DC /* FeatureModules */ = {
+			isa = PBXGroup;
+			children = (
+				A563972628A63A1D000623DC /* Root */,
+				A50DB0AA28A643E100C06C3B /* Home */,
+				A50DB0A928A6433E00C06C3B /* FavoriteBeatmap */,
+				A50DB0A728A6422700C06C3B /* SearchBeatmap */,
+			);
+			path = FeatureModules;
+			sourceTree = "<group>";
+		};
+		A563972328A63949000623DC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A5C3750A28A62F9900DCF42C /* MusicGameApp.swift */,
+				A5C3750E28A62F9B00DCF42C /* Assets.xcassets */,
+				A5688B1D28A63A5C0056795A /* Preview Content */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A5688B1F28A63A6C0056795A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A5C374FE28A62F9900DCF42C = {
 			isa = PBXGroup;
 			children = (
-				A5C3750928A62F9900DCF42C /* MusicGame */,
+				A563972328A63949000623DC /* App */,
+				A563972228A6393F000623DC /* FeatureModules */,
 				A5C3750828A62F9900DCF42C /* Products */,
+				A5688B1F28A63A6C0056795A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,25 +80,6 @@
 				A5C3750728A62F9900DCF42C /* MusicGame.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		A5C3750928A62F9900DCF42C /* MusicGame */ = {
-			isa = PBXGroup;
-			children = (
-				A5C3750A28A62F9900DCF42C /* MusicGameApp.swift */,
-				A5C3750C28A62F9900DCF42C /* ContentView.swift */,
-				A5C3750E28A62F9B00DCF42C /* Assets.xcassets */,
-				A5C3751028A62F9B00DCF42C /* Preview Content */,
-			);
-			path = MusicGame;
-			sourceTree = "<group>";
-		};
-		A5C3751028A62F9B00DCF42C /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				A5C3751128A62F9B00DCF42C /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +98,9 @@
 			dependencies = (
 			);
 			name = MusicGame;
+			packageProductDependencies = (
+				A5688B2028A63A6C0056795A /* Root */,
+			);
 			productName = MusicGame;
 			productReference = A5C3750728A62F9900DCF42C /* MusicGame.app */;
 			productType = "com.apple.product-type.application";
@@ -125,7 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5C3751228A62F9B00DCF42C /* Preview Assets.xcassets in Resources */,
+				A5688B1E28A63A5C0056795A /* Preview Content in Resources */,
 				A5C3750F28A62F9B00DCF42C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +155,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5C3750D28A62F9900DCF42C /* ContentView.swift in Sources */,
 				A5C3750B28A62F9900DCF42C /* MusicGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,10 +283,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MusicGame/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"App/Preview Content\"";
 				DEVELOPMENT_TEAM = 92KBMJ4M4S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,10 +313,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MusicGame/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"App/Preview Content\"";
 				DEVELOPMENT_TEAM = 92KBMJ4M4S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +358,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A5688B2028A63A6C0056795A /* Root */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Root;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A5C374FF28A62F9900DCF42C /* Project object */;
 }
